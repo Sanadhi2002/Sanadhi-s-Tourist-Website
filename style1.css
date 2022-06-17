@@ -97,6 +97,7 @@ ul li{
     height: 500px;  
    /* box-shadow: -20px 20px 20px  rgb(0, 0, 0) ;*/
     border-radius: 1em; 
+    padding: 10px;
 }
 
 .grid-item:hover{
@@ -172,7 +173,7 @@ ul li{
     justify-content: space-around;
    grid-template-columns: repeat(2,minmax(200px , auto)); 
    grid-template-rows: 450px 450px;
-   grid-gap: 50px;
+   grid-gap: 20px;
    max-width: auto;
    /*margin-left: 400px;
    margin-right: 200px;*/
@@ -183,11 +184,12 @@ ul li{
 
 .grid-item{
     background-color: #FFFFFF;
-    padding: 10px;
+    padding: 30px;
     width: auto;
     height: 500px;  
    /* box-shadow: -20px 20px 20px  rgb(0, 0, 0) ;*/
     border-radius: 1em;
+    font-size: 13px;
 }
 #scroll{
     float:none;
