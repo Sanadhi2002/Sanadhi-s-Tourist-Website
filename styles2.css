@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p ,  li {
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p ,h2,h3,h1 ,h4, ul li{
+    margin: 30px;
+}
+h2{
+   text-align: center;
+   font-family:Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+  
+}
+h3{
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 80px;
+   
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#anuradhapura{
+    background-image: url("images/anu2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 700px; /*background image for the anuruadhapura page*/
+}
+#scroll{ /*the styles for the scroll to top icon*/
+    float: right;}
+
+/* Style the links inside the navigation bar */
+.mainNav {
+    background-color: #FFFFFF;
+    overflow: show;
+    box-shadow: 2px 2px 2px 2px silver;
+  }
+.mainNav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+/* Change the color of links on hover */
+.mainNav a:hover {
+    background-color: black;
+    color: white;
+}
+  
+/* Add a color to the active/current link */
+.mainNav a.active {
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.text-boxA{
+    width: 90%;
+    position: absolute; /*styles for the text over the background images in anuradhapura pages*/
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px 0 40px; 
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.text-boxA h1{
+    font-size: 70px;
+    font-family: Helvetica, sans-serif; /*styles for the text over the background image in anuradhapura pages*/
+}
+/*styles for anuradhapura page*/
+.flex-container2{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    margin-left: 350px;
+    margin-right: 350px;
+    animation-name: slide-right2 ;
+    animation-duration: 2s;
+    margin-top: 700px;
+}
+    
+
+
+.flex-box{
+    width:700px;
+    margin: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 10px;
+    border-radius:1em;
+    box-shadow: 10px 20px 20px rgb(100, 100, 167);
+    
+}
+.image{
+    width: 380px;
+    height: auto; /*images for the whole website*/
+    border-radius:1em;  
+    
+}
+.footer{
+    display: block;
+    background-color:rgb(157, 109, 109);
+   line-height: 0;    /*styling the footer*/
+   margin-top: 100px;  
+   padding: 10px;
+}
+
+.footer ul li a{
+    color: rgb(18, 17, 17);
+    text-decoration: none; /*styling the footer links*/
+
+}
+.footer ul li a:hover{
+    text-decoration: underline;  /*styling the footer links*/
+}
+
+@keyframes slide-right2 {
+    /*animation for anuradhapura page*/
+    
+from {
+margin-left: 0px;
+}
+
+to {
+margin-left: 350px;
+}
+
+}
+.footer{
+    width:auto;
+}
+/* anuradhapura styles */
+#anuradhapura{
+    background-size: 100% 750px; /*background image for the anuruadhapura page*/
+}
+
+       
+@keyframes slide-right2 {
+    /*animation for anuradhapura page*/
+from {
+margin-left: 0px;
+}
+
+to {
+margin-left: 280px;
+}
+
+}
+
+/* anuradhpura media tag */
+@media (max-width:900px) {
+    /*styles for anuradhapura page*/
+    .flex-container2{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;  
+        animation: none;
+        margin-top: 700px;
+        margin-left: 0;
+    }
+
+    .flex-box{
+        width:390px;
+        background-color: #FFFFFF;
+        height: auto;
+        padding: 10px;
+        box-shadow: 10px 20px 20px grey;
+    }
+    .text-boxA{
+        width: 90%;
+        position: absolute; /*styles for the text over the background images in all the pages*/
+        top: 60%;
+        left: 50%;  
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0 40px; 
+        font-size: 30px;
+        font-family: Helvetica, sans-serif;
+        color: #FFFFFF;
+    }
+    
+    .text-boxA h1{
+        font-size: 40px;
+        font-family: Helvetica, sans-serif; /*styles for the text over the background image in all the pages*/
+    }
+  
+}
+/* anuradhpura media tag */
+@media (max-width:900px) {
+    /*styles for anuradhapura page*/
+    .flex-container2{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;  
+        animation: none;
+        margin-top: 700px;
+        margin-left: 0;
+    }
+
+    .flex-box{
+        width:390px;
+        background-color: #FFFFFF;
+        height: auto;
+        padding: 10px;
+        box-shadow: 10px 20px 20px grey;
+    }
+    .text-boxA{
+        width: 90%;
+        position: absolute; /*styles for the text over the background images in all the pages*/
+        top: 60%;
+        left: 50%;  
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0 40px; 
+        font-size: 30px;
+        font-family: Helvetica, sans-serif;
+        color: #FFFFFF;
+    }
+    
+    .text-boxA h1{
+        font-size: 40px;
+        font-family: Helvetica, sans-serif; /*styles for the text over the background image in all the pages*/
+    }
+   
+}

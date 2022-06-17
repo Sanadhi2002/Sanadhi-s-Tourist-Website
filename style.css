@@ -1,0 +1,808 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-boxH{
+    width: 90%;
+    position: absolute; /*styles for homepage*/
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px 0 40px; 
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.text-boxH h1{
+    font-size: 70px;
+    font-family: Helvetica, sans-serif; /*styles for the text over the background image in home page*/
+}
+.text-boxW{
+    width: 90%;
+    position: absolute; /*styles for the text over the background images wildlife the pages*/
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px 0 40px; 
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.text-boxW h1{
+    font-size: 70px;
+    font-family: Helvetica, sans-serif; /*styles for the text over the background image in wildlife pages*/
+}
+.text-boxB{
+    width: 90%;
+    position: absolute; /*styles for the text over the background images in the beachespages*/
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px 0 40px; 
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.text-boxB h1{
+    font-size: 70px;
+    font-family: Helvetica, sans-serif; /*styles for the text over the background image in the beaches pages*/
+}
+.text-boxA{
+    width: 90%;
+    position: absolute; /*styles for the text over the background images in anuradhapura pages*/
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px 0 40px; 
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.text-boxA h1{
+    font-size: 70px;
+    font-family: Helvetica, sans-serif; /*styles for the text over the background image in anuradhapura pages*/
+}
+
+#btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    font-size:25px;
+    background: transparent; /*button in the homepage. plan your trip button*/
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    padding: 3px;
+    
+}
+
+#btn:hover{
+    text-decoration:none;
+    border: 1px solid rgb(10, 96, 94);
+    transition: 1s;                          /*plan your trip button in the homepage*/
+    background-color: rgb(10, 96, 94) ;
+}
+#wildlife{
+    background-image:url("images/tiger2.webp");
+    background-size: 100% 700px;   /*background image for the wildlife page*/
+    background-repeat: no-repeat;
+
+}
+
+#beaches{
+    background-image: url("images/beaches2.webp");
+    background-repeat: no-repeat;    /*background image for the beaches page*/
+    background-size: 100% 700px;
+ 
+}
+
+#anuradhapura{
+    background-image: url("images/anu2.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 700px; /*background image for the anuruadhapura page*/
+}
+#purchase{
+    background-color: rgb(238, 238, 152); /*background image for the purchase and donate page*/
+}
+
+/* Style the links inside the navigation bar */
+.mainNav {
+    background-color: #FFFFFF;
+    overflow: show;
+    box-shadow: 2px 2px 2px 2px silver;
+  }
+.mainNav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+/* Change the color of links on hover */
+.mainNav a:hover {
+    background-color: black;
+    color: white;
+}
+  
+/* Add a color to the active/current link */
+.mainNav a.active {
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+p ,  li {
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p ,h2,h3,h1 ,h4, ul li{
+    margin: 30px;
+}
+h2{
+   text-align: center;
+   font-family:Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+  
+}
+h3{
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 80px;
+   
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+button{
+    border-radius: 5px;  /*add to cart button in the purchase page*/
+    color: black;
+     font-size: 20px;
+  }
+ button:hover{
+     background-color: gold;}
+
+#scroll{ /*the styles for the scroll to top icon*/
+    float: right;}
+
+.button1{
+    border-radius: 5px;
+    font-size: 20px;/*buttons in the activities page that link to the heritage locations*/
+    color: black;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+}
+.button1:hover{
+    background-color: rgb(18, 17, 17);
+    color:#FFFFFF ; /*buttons in the activities page that link to the heritage locations*/
+}
+.donate-link { /*link styles for the links in the  purchase and donate page*/
+   color: red;
+}
+.donate-link:hover{   /*link styles for the links in the  purchase and donate page*/
+    color: blue;
+    text-decoration:none;
+}
+
+.image{
+    width: 380px;
+    height: auto; /*images for the whole website*/
+    border-radius:1em;  
+    
+}
+.image1{/*images in the homepage*/
+    width: 380px;
+    height: auto;     
+    
+}
+
+.images{
+    width: 470px;/*images for the activities page*/
+    height: auto; 
+    border-radius:1em; 
+
+}
+
+.footer{
+    display: block;
+    background-color:rgb(157, 109, 109);
+   line-height: 0;    /*styling the footer*/
+   margin-top: 100px;  
+   padding: 10px;
+}
+
+.footer ul li a{
+    color: rgb(18, 17, 17);
+    text-decoration: none; /*styling the footer links*/
+
+}
+.footer ul li a:hover{
+    text-decoration: underline;  /*styling the footer links*/
+}
+
+.iframe{
+  margin-top: 800px;
+  width:100%;
+  
+}
+
+.link{  /*links in the activities page and the homepage.*/
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+.link:visited{
+    color: blue;  /*links in the activities page and the homepage.*/
+}
+.link:hover{
+    text-decoration: underline;  /*links in the activities page and the homepage.*/
+    color: blue;
+}
+/*styles for homepage*/
+.homepage-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;/*
+    padding: 60px; */
+}
+
+.homepage-content img{
+     height: 300px;
+     box-shadow: 10px 20px 20px grey;
+     border-radius: 1em;
+}
+.homepage-content img:hover{
+    transform: scale(1.2)}
+
+
+.container2{
+    margin-top: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.container3{
+    margin-right: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.con-itemW{
+    width:500px;
+    margin:20px;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+    /*  border:3px solid rgb(18, 17, 17) ;*/
+    background-color: white;
+    padding: 30px;
+    border-radius:1em;
+    height: 100%;
+    flex-basis: 2px;
+    box-shadow: -1px 1px 5px 5px rgb(100, 100, 167);/*
+    overflow-y: scroll;*/
+}
+.tourlink{
+    color: green;
+    margin:30px;
+
+}
+.tourlink:hover{
+    color: green;
+    margin:30px;
+    text-decoration: none;
+}
+table{
+    border-style: none;
+    color: rgb(18, 17, 17);   /*styling the table in the wildlife page*/
+    background-color: #FFFFFF;
+}
+table tr td{
+    color: rgb(18, 17, 17);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*styles for beaches page*/
+.container1{
+    display: flex;
+    justify-content:space-around;
+    padding: 30px;
+    flex-direction: row;/*
+    flex-wrap: wrap; */ 
+    margin-right: 42%;
+    margin-top: 700px;
+    
+    }
+    
+.con-item{
+width:500px;
+margin:20px;
+align-items:center;
+justify-content:center;
+align-content:center;
+/*  border:3px solid rgb(18, 17, 17) ;*/
+background-color: #FFFFFF;
+padding: 30px;
+border-radius:1em;
+height: 600;
+flex-basis: 2px;
+box-shadow: -1px 1px 5px 5px rgb(100, 100, 167);
+}
+
+#heading{
+    font-size:70px;
+}
+.con-item:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+    
+}
+
+
+/*styles for anuradhapura page*/
+.flex-container2{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    margin-left: 350px;
+    margin-right: 350px;
+    animation-name: slide-right2 ;
+    animation-duration: 2s;
+    margin-top: 700px;
+}
+    
+
+
+.flex-box{
+    width:700px;
+    margin: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 10px;
+    border-radius:1em;
+    box-shadow: 10px 20px 20px rgb(100, 100, 167);
+    
+}
+
+/*styles for activities page*/
+.flex-container{
+    display: flex;
+    justify-content:space-around;
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin-top: 50px;
+    row-gap: 100px;
+    column-gap: 100px;
+
+}
+
+.flex-item{
+    width:600px;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+  /*  border:3px solid rgb(18, 17, 17) ;*/
+    background-color: #FFFFFF;
+    height:650px;
+    border-radius:1em;
+    box-shadow: 10px 20px 20px rgb(100, 100, 167);
+} 
+
+/*styles for purchase and donate page*/
+.purchase-content{
+    Display:flex;
+    Flex-direction:row;
+    Flex-wrap:wrap;
+    column-gap: 10px;
+    margin: 20px;
+    
+}
+Fieldset{
+    Font-size:18px;
+}
+Fieldset legend{
+    Font-size:18px
+}
+
+.content div{                        
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius:1em
+}
+
+.purchase{
+    width: 200px;
+    height: 200px; 
+}
+
+
+@keyframes slide-right {  /*animation for purchase and donate page*/
+
+
+    from {
+    margin-left: 0px;
+    }
+     
+    to {
+    margin-left: 270px;
+    }
+    
+    }
+@keyframes slide-right2 {
+                               /*animation for anuradhapura page*/
+                               
+     from {
+        margin-left: 0px;
+        }
+        
+        to {
+        margin-left: 350px;
+        }
+        
+        }
+
+ #logo{
+    margin-top: 30px;
+    width: 100px;
+ }
+
+
+
+@media only screen  and (max-width:1000px){
+    body{
+        width: 100%;
+    }
+
+    .text-boxB, .text-boxA ,.text-boxW{
+        top: 60%;
+        left: 160%;  
+    }
+    
+    .text-boxB h1, .text-boxA h1,.text-boxW h1{
+        font-size: 50px;
+    }
+    #scroll{ /*the stles for the scroll to top icon*/
+        float: left;}
+  }
+.footer{
+    width:auto;
+}
+
+.iframe{
+ height: 400px;
+  width: 100%;
+}
+
+/* beach style */
+#beaches{
+    background-size: 100% 700; 
+   
+}
+.container1{
+    margin-left: 600px;
+}
+    
+/* anuradhapura styles */
+#anuradhapura{
+    background-size: 100% 750px; /*background image for the anuruadhapura page*/
+}
+
+   
+       
+@keyframes slide-right2 {
+        /*animation for anuradhapura page*/
+    from {
+    margin-left: 0px;
+    }
+
+    to {
+    margin-left: 280px;
+    }
+
+    }
+   
+    .content{
+        display: grid;
+        grid-template-columns: 300px 400px 300px;
+        margin-left: 500px;
+    
+}
+
+
+@keyframes slide-right {  /*animation for purchase and donate page*/
+
+        from {
+        margin-left: 0px;
+        }
+        
+        to {
+        margin-left:280px;
+        }
+    
+    }
+/* logo top left code */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.top-left {
+    position: absolute;
+    top: 1%;
+    left: 16px;
+}
+ol{
+    margin-left: 10%;
+}
+/* home page media text */
+@media (max-width:900px){
+    ol{
+        margin: 10%;
+    }
+    .homepage-content{
+    display: flex;
+    flex-direction: column;
+
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .top-left {
+        position: absolute;
+        top: 1%;
+        left: 16px;
+      
+    }
+    .text-boxH{
+        width: 90%;
+        position: absolute; /*styles for the text over the background images in all the pages*/
+        top: 35%;
+        left: 50%;  
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0 40px; 
+        font-size: 15px;
+        font-family: Helvetica, sans-serif;
+    }
+    .text-boxH h1{
+        font-size: 15px;
+        font-family: Helvetica, sans-serif; /*styles for the text over the background image in all the pages*/
+    }
+    #H-map{
+        width: 100%;
+        height: 170px;
+    }
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+    .image{
+        width: 100%;
+        height: auto; /*images for the whole website*/
+        border-radius:1em;  
+        
+    }
+    #btn{
+        font-size: 15px;
+        margin: 0px 0 60px;
+    }
+    .mainNav {
+        background-color: #FFFFFF;
+        overflow: show;
+        box-shadow: 2px 2px 2px 2px silver;
+        width: 100%;
+      }
+    /* Style the links inside the navigation bar */
+    }
+
+/* beaches media tag */
+@media (max-width:900px) {
+    .container1{
+        margin: auto;
+        flex-direction: column;
+        margin-top: 700px;
+        justify-content:space-between;
+    }
+    .con-item{
+        width:300px;
+        align-items:center;
+        justify-content:center;
+        align-content:center;
+        /*  border:3px solid rgb(18, 17, 17) ;*/
+        background-color: #FFFFFF;
+        border-radius:1em;
+        height: 600px;
+        box-shadow: -1px 1px 5px 5px rgb(100, 100, 167);
+    }
+    .image{
+        width: 100%;
+        height: auto; /*images for the whole website*/
+        border-radius:1em;  
+        
+    }
+    .text-boxB{
+        width: 90%;
+        position: absolute; /*styles for the text over the background images in all the pages*/
+        top: 50%;
+        left: 50%;  
+        transform: translate(-50% ,-50%);
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0 40px; 
+        font-size: 30px;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .text-boxB h1{
+        font-size: 30px;
+        font-family: Helvetica, sans-serif; /*styles for the text over the background image in all the pages*/
+    }
+}
+
+/* activites page media tag */
+@media (max-width:900px) {
+    /*styles for activities page*/
+    .flex-container{
+        display: flex;
+        justify-content:space-around;
+        padding: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;  
+        margin-top: 50px;
+        row-gap: 100px;
+        column-gap: 100px;
+
+    }
+    .flex-item{
+        width:100%;
+        align-items:center;
+        justify-content:center;
+        align-content:center;
+    /*  border:3px solid rgb(18, 17, 17) ;*/
+        background-color: #FFFFFF;
+        height:650px;
+        border-radius:1em;
+        box-shadow: 10px 20px 20px rgb(201, 189, 193);
+    }
+    .images{
+        width: 90%;
+        height: 100%;
+    }
+}
+
+/* wildlife media tag */
+@media (max-width:900px) {
+    .container2{
+        margin-top: 450px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .con-itemW{
+        margin-left: 2%;
+        align-items:center;
+        justify-content:center;
+        align-content:center;
+        /*  border:3px solid rgb(18, 17, 17) ;*/
+        background-color: white;
+        border-radius:1em;
+        width: 400px;
+        height: 100%;
+    }
+    .text-boxW{
+        width: 100%;
+        position: absolute; /*styles for the text over the background images in all the pages*/
+        top: 55%;
+        left: 50%;  
+        transform: translate(-50% ,-50%);
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0 40px; 
+        font-size: 40px;
+        font-family: Helvetica, sans-serif;
+        color: #FFFFFF;
+    }
+    
+    .text-boxW h1{
+        font-size: 30px;
+        font-family: Helvetica, sans-serif; /*styles for the text over the background image in all the pages*/
+    }
+    #wildlife{
+        background-image:url("images/tiger2.webp");
+        background-size: 100% 600px;   /*background image for the wildlife page*/
+        background-repeat: no-repeat;
+    
+    }
+}
+
+/* anuradhpura media tag */
+@media (max-width:900px) {
+    /*styles for anuradhapura page*/
+    .flex-container2{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;  
+        animation: none;
+        margin-top: 700px;
+        margin-left: 0;
+    }
+
+    .flex-box{
+        width:390px;
+        background-color: #FFFFFF;
+        height: auto;
+        padding: 10px;
+        box-shadow: 10px 20px 20px grey;
+    }
+    .text-boxA{
+        width: 90%;
+        position: absolute; /*styles for the text over the background images in all the pages*/
+        top: 60%;
+        left: 50%;  
+        text-align: center;
+        color: #FFFFFF;
+        margin: 10px 0 40px; 
+        font-size: 30px;
+        font-family: Helvetica, sans-serif;
+        color: #FFFFFF;
+    }
+    
+    .text-boxA h1{
+        font-size: 40px;
+        font-family: Helvetica, sans-serif; /*styles for the text over the background image in all the pages*/
+    }
+}
+@media (max-width:900px){
+    .purchase-content{
+        row-gap: 40px;
+    }
+}

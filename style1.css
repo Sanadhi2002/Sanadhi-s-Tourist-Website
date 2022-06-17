@@ -1,0 +1,214 @@
+/*polonnaruwa css*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#polonnaruwa{
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 90px;
+}
+
+.mainNav {
+    background-color: #FFFFFF;
+    overflow: show;
+  }
+/* Style the links inside the navigation bar */
+.mainNav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+/* Change the color of links on hover */
+.mainNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+/* Add a color to the active/current link */
+.mainNav a.active {
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+p , h2 ,ul li{
+    font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:justify; 
+}
+
+h2{
+    font-family:Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+ul li{
+   font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 50px;
+}
+.image{
+    width: 300px;
+    height: auto; 
+    border-radius:1em;  
+}
+#scroll{
+    float: right;
+  }
+  
+.grid-container{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(2,minmax(200px , auto)); 
+    grid-template-rows: auto;
+    grid-gap: 80px;
+    max-width: auto;
+    animation-name: slide-right;
+    animation-duration: 3s;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.grid-item{
+    background-color: #FFFFFF;
+    width: auto;
+    height: 500px;  
+   /* box-shadow: -20px 20px 20px  rgb(0, 0, 0) ;*/
+    border-radius: 1em; 
+}
+
+.grid-item:hover{
+    transform:scale(1.1);
+    box-shadow:10px 10px 10px  grey ;
+}
+.image2{
+    width: 400px;
+    height: 300px;
+    border-radius: 1em;
+}
+.footer{
+    width: 100%;
+    background-color:rgb(157, 109, 109);
+   line-height: 0;
+   margin-top: 100px;
+   padding: 10px;
+}
+.footer ul li a{
+    color: black;
+    text-decoration: none;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.img-banner{
+    animation: fade;
+    animation-duration: 3s;
+}
+
+@keyframes slide-right {
+
+    from {
+    margin-left: 0px;
+    }
+    
+    to {
+    margin-left: 395px;
+    }
+    
+    }
+
+@media  (max-width:900px){
+    *{
+        box-sizing: border-box; 
+    }
+    
+    #polonnaruwa{
+            background-repeat: no-repeat;
+        }
+        ul li{
+            font-family: Helvetica,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             line-height: 30px;
+         }
+        .image{
+            width:100%;
+            height: auto; 
+            border-radius:1em;  
+        }
+        .image2{
+            width: 100%;
+            height: 200px;
+            border-radius: 1em;
+        }
+        @keyframes fade {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        
+.grid-container{
+    display: grid;
+    justify-content: space-around;
+   grid-template-columns: repeat(2,minmax(200px , auto)); 
+   grid-template-rows: 450px 450px;
+   grid-gap: 50px;
+   max-width: auto;
+   /*margin-left: 400px;
+   margin-right: 200px;*/
+   /*animation-name: slide-right;
+    animation-duration: 3s;*/
+
+}
+
+.grid-item{
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: auto;
+    height: 500px;  
+   /* box-shadow: -20px 20px 20px  rgb(0, 0, 0) ;*/
+    border-radius: 1em;
+}
+#scroll{
+    float:none;
+  }
+
+    .footer{
+        width:102%;
+        background-color:rgb(157, 109, 109);
+       line-height: 0;
+       margin-top: 100px;
+       padding: 10px;
+    }
+    .centered {
+        margin-top: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 90px;
+    }
+
+
+} 
