@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
        
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Payment Form</title>
+        <title>Donation Form</title>
         <link rel="stylesheet" href="styledonation.css">
  </head> 
 <body>
@@ -12,7 +12,8 @@
 
 <div id="theForm">
  
-    <h2>Donate</h2>
+    <h1>Donate</h1>
+    <h2>Please make your donations here </h2>
 
 <select>
   <option>LKR 100</option>
@@ -26,7 +27,7 @@
 
     <br>
     <br>
-    
+  <form>
     <label>Visa</label>
     <input type="radio" id="visa" name="card" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
@@ -49,7 +50,7 @@
    <br>
    
   <label for="cardNo">Card Number :</label>
-    <input type="text" id="card-no"  name="card-no" maxlength="19"   placeholder="0000 0000 0000 0000" >
+    <input type="text" id="card-no"  name="card-no" maxlength="16"   placeholder="0000000000000000" >
     <br>
     <span id="cardNumber-error"></span>
     <br>
@@ -87,6 +88,8 @@
 <span id="submit-error"></span>
 
 </div>
+
+</form>
 <script src="main.js"></script>
 </body>
 </html>

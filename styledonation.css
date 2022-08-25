@@ -2,7 +2,7 @@
 *{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h2{
+h1{
 	text-align: center;
 }
 
@@ -22,12 +22,15 @@ div{
 }
 
 #submit{
-  background-color: grey;
+  background-color: black;
   color: white;
   border-radius: 25px;
+  height: 30px;
+  width: 80px;
 }
 #submit:hover{
-  background-color: black;
+  background-color: white;
+  color: black;
 }
 
 
