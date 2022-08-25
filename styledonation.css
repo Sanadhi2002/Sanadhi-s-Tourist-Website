@@ -1,0 +1,139 @@
+
+*{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+	text-align: center;
+}
+
+body{
+	background-color: rgb(157, 109, 109);
+}
+div{
+	background-color: white;
+	position: absolute;
+	
+	left: 35%;
+	padding: 15px;
+	top: 5%;
+	background-color: burlywood;
+  border-radius: 25px;
+
+}
+
+#submit{
+  background-color: grey;
+  color: white;
+  border-radius: 25px;
+}
+#submit:hover{
+  background-color: black;
+}
+
+
+span{
+	position: absolute;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+/*
+.popup {
+    position: relative;
+    display: inline-block;
+  
+  }
+  
+  /* The actual popup (appears on top) 
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }*/
+
+  #pop{
+    display: none;
+   background-color: beige;
+   right: 45%;
+   top: 200px;
+   width: 150px;
+   -webkit-animation: fadeIn 1s;
+   animation: fadeIn 1s
+   
+}
+
+
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  /*.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }*/
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @media (max-width:900px){
+    div{
+      
+      right: 30%;
+     
+     
+
+    
+    }
+    span{
+      position: absolute;
+        right: 17px;
+     
+    }
+
+    #pop{
+     
+     right: 45%;
+     top: 200px;
+     width: 150px;
+   
+     
+  }
+
+
+  }
+
+  @media (max-width:500px){
+    div{
+      
+      right: 40%;
+    
+    }
+    span{
+      position: absolute;
+        right: 17px;
+     
+    }
+
+    #pop{
+     
+     right: 45%;
+     top: 200px;
+     width: 150px;
+   
+     
+  }}

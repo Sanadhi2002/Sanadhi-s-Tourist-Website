@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<head lang="en">
+        <meta charset="UTF-8">
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Payment Form</title>
+        <link rel="stylesheet" href="styledonation.css">
+ </head> 
+<body>
+
+
+<div id="theForm">
+ 
+    <h2>Donate</h2>
+
+<select>
+  <option>LKR 100</option>
+  <option>LKR 250</option>
+  <option>LKR 500</option>
+  <option>LKR 1000</option>
+  <option>LKR 2500</option>
+  <option>LKR 5000</option>
+  <option>LKR 10000</option>
+</select>
+
+    <br>
+    <br>
+    
+    <label>Visa</label>
+    <input type="radio" id="visa" name="card" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <label>Master-Card</label>
+    <input type="radio" id="masterCard" name="card">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <label>Ameican Express</label>
+    <input type="radio" id="americanExpress" name="card">
+    <br>
+<br>
+
+
+ 
+   <label for="fullName">Fullname :</label>
+   <input type="text" id="fName" name="fname" placeholder="enter your name">
+   <br>
+   <span id="name-error"></span>
+   <br>
+   <br>
+   <br>
+   
+  <label for="cardNo">Card Number :</label>
+    <input type="text" id="card-no"  name="card-no" maxlength="19"   placeholder="0000 0000 0000 0000" >
+    <br>
+    <span id="cardNumber-error"></span>
+    <br>
+    <br>
+    <br>
+    <label for="cardName">Name on Card :</label>
+    <input type="text" id="card-name" name="card-name" placeholder="xxxx" >
+    <br>
+    <span id="cardName-error"></span>
+    <br>
+    <br>
+    <br>
+    <label for="expiry-month">expiry month: &nbsp;</label>
+    <input type="number" maxlength="2" max="12" step="1" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;" id="month" name="cardExpiry"  placeholder="mm">
+    <br>
+    <span id="cardMonth-error"></span>
+    <br>
+    <br>
+    <br>
+    <label for="expiry-year">year</label>
+    <input type="number" min="22"  maxlength="2" id="year" name="cardExpiry" placeholder="yy" >
+    <br>
+    <span id="cardYear-error"></span>
+    <br>
+    <br>
+    <br>
+    <label>security code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="sec-code" name="sec" maxlength="3" placeholder="000">
+    <br>
+    <span id="cardCode-error"></span><br>
+    <div id="pop">
+      <p>Thank you for your donation</p>
+    </div>
+<button id="submit">Submit</button>
+<span id="submit-error"></span>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
