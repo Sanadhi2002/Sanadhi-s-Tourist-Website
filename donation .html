@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
-<head lang="en">
+<html lang="en">
+<head >
         <meta charset="UTF-8">
         <meta name="description" content="Tourist attractions in sri lanka">
        
@@ -44,43 +45,49 @@
 
 
  
-   <label for="fullName">Fullname :</label>
+   <label for="fName">Fullname :</label>
    <input type="text" id="fName" name="fname" placeholder="enter your name">
    <br>
    <span id="name-error"></span>
    <br>
    <br>
    <br>
+   <label for="address">Address:</label>
+   <input type="text" id="address" name="Address" placeholder="Enter your address">
+   <br>
+  <span id="address-error"></span> <br><br><br>
+
    
-  <label for="cardNo">Card Number :</label>
+  <label for="card-no">Card Number :</label>
     <input type="text" id="card-no"  name="card-no" maxlength="16"   placeholder="0000000000000000" >
     <br>
     <span id="cardNumber-error"></span>
     <br>
     <br>
     <br>
-    <label for="cardName">Name on Card :</label>
+    <label for="card-name">Name on Card :</label>
     <input type="text" id="card-name" name="card-name" placeholder="xxxx" >
     <br>
     <span id="cardName-error"></span>
     <br>
     <br>
+    
     <br>
-    <label for="expiry-month">expiry month: &nbsp;</label>
-    <input type="number" maxlength="2" max="12" step="1" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;" id="month" name="cardExpiry"  placeholder="mm">
+    <label for="month">expiry month: &nbsp;</label>
+    <input type="number"  max="12" step="1"  id="month" name="cardExpiry"  placeholder="mm">
     <br>
     <span id="cardMonth-error"></span>
     <br>
     <br>
     <br>
-    <label for="expiry-year">year</label>
-    <input type="number" min="22"  maxlength="2" id="year" name="cardExpiry" placeholder="yy" >
+    <label for="year">year</label>
+    <input type="number" min="22"  id="year" name="cardExpiry" placeholder="yy" >
     <br>
     <span id="cardYear-error"></span>
     <br>
     <br>
     <br>
-    <label>security code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <label for="sec-code">security code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
     <input type="text" id="sec-code" name="sec" maxlength="3" placeholder="000">
     <br>
     <span id="cardCode-error"></span><br>

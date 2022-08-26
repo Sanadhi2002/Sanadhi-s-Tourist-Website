@@ -7,18 +7,25 @@ let cardMonthError=document.getElementById("cardMonth-error");
 let cardYearError=document.getElementById("cardYear-error");
 let cardCodeError=document.getElementById("cardCode-error");
 let submitError=document.getElementById("submit-error");
-let element = document.getElementById("pop");
+let addressError=document.getElementById("address-error");
+let elementpop = document.getElementById("pop");
+let month=document.getElementById("month");
 const submit=document.getElementById("submit");
 
-submit.addEventListener("click",validateName)
-submit.addEventListener("click",validateCardNumber)
-submit.addEventListener("click",validateCardName)
-submit.addEventListener("click",validateCardMonth)
-submit.addEventListener("click",validateCardYear)
-submit.addEventListener("click",validateCardCode)
-submit.addEventListener("click",validateForm)
+submit.addEventListener("click",validateName);
+submit.addEventListener("click",validateCardNumber);
+submit.addEventListener("click",validateCardName);
+submit.addEventListener("click",validateCardMonth);
+submit.addEventListener("click",validateCardYear);
+submit.addEventListener("click",validateCardCode);
+submit.addEventListener("click",validateAddress);
+submit.addEventListener("click",validateForm);
 submit.addEventListener("click",handleClick);
+month.addEventListener("change",changeMonth);
 
+function changeMonth(){
+  if(parseInt(this.value,10)<10)this.value='0'+this.value
+}
 
 
 
@@ -31,9 +38,22 @@ function validateName(){
 
  return true;
 }
+
+function validateAddress(){
+  let address=document.getElementById("address").value;
+ if (address.length==0){
+    addressError.innerHTML="Address is required";
+    return false;
+ }
+
+ return true;
+}
+
+
+
 function validateCardNumber(){
     let cardnumber=document.getElementById("card-no").value;
-    if (cardnumber.length !==19){
+    if (cardnumber.length <16){
         cardNumberError.innerHTML="valid card number is required";
         return false;
     }
@@ -80,7 +100,7 @@ function validateCardCode(){
 
 function myFunction() {
  
-  element.style.display="block";
+  elementpop.style.display="block";
 cardCodeError.innerHTML="";
 cardMonthError.innerHTML="";
 cardNameError.innerHTML="";
@@ -89,13 +109,13 @@ cardNumberError.innerHTML="";
 nameError.innerHTML="";
   
 setTimeout(function(){ 
-  element.style.display= "none"
+  elementpop.style.display= "none"
  }, 3000);
  ;}
 
 function validateForm(){
   
-    if(validateName() && validateCardName()  && validateCardNumber()  && validateCardYear()  && validateCardMonth()  && validateCardCode()) {
+    if(validateName() && validateCardName()  && validateAddress() && validateCardNumber()  && validateCardYear()  && validateCardMonth()  && validateCardCode()) {
 
          myFunction();
        }
@@ -108,9 +128,10 @@ function handleClick(event){
   // 👇️ if you are submitting a form
   event.preventDefault();
 
-  const inputs = document.querySelectorAll('#fName,#card-no,#card-name,#month,#year,#sec-code');
+  const inputs = document.querySelectorAll('#fName,#card-no,#card-name,#address,#month,#year,#sec-code');
 
   inputs.forEach(input => {
     input.value = '';
   });
 };
+
