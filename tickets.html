@@ -9,11 +9,7 @@
         <title>Booking page</title>
     </head>
     <body>
-    
-
-
-      
-        <div>
+<div>
 <form>
     <h1>Ticket Booking</h1>
     <p class="para"> for children under the age of 3 entrance is free</p>
@@ -21,52 +17,38 @@
     <p class="para">Local child pass is available for children aged 3 to 12 years</p>
 <h4>Please choose your ticket type and duration</h4>
 <select id="selectTicket">
-    <option>Please choose a ticket</option>
-    <option id="ticketone" Name="ticket" value="Foreign Adult Pass" > Foreign Adult Pass  LKR 5000</option>
+<option>Please choose a ticket</option>
+<option id="ticketone" Name="ticket" value="Foreign Adult Pass" > Foreign Adult Pass  LKR 5000</option>
 <option id="tickettwo" Name="ticket" value="Foreign Child Pass">Foreign Child Pass   LKR 2500</option>
 <option  id="ticketthree" Name="ticket"  value="Local Adult Pass">Local Adult Pass  LKR 1000</option>
 <option  id="ticketfour" Name="ticket" value="Local Child Pass">Local Child Pass  LKR 500</option>
 <option id="ticketfive" Name="ticket" value="Annual Pass- Foreign">Annual Pass- Foreign  LKR 15000</option>
 <option id="ticketsix" Name="ticket" value="Annual Pass- Local">Annual Pass- Local  LKR 4500</option>
-
 </select>
-
 <br><br>
-
-    <select id="SelectDuration" required>
-        <option value="" selected >Please choose your duration</option>
-        <option  name="duration" id="duration1" value="3-hours">3 hours</option>
-        <option name="duration"id="duration2" value="half-day">half day</option>
-        <option name="duration" id="duration3" value="full-day">full day</option>
-        <option  name="duration" id="duration4" value="two-days">2 days</option>
-    </select>
-   
+<select id="SelectDuration" required>
+<option value="" selected >Please choose your duration</option>
+<option  name="duration" id="duration1" value="3-hours">3 hours</option>
+<option name="duration"id="duration2" value="half-day">half day</option>
+<option name="duration" id="duration3" value="full-day">full day</option>
+<option  name="duration" id="duration4" value="two-days">2 days</option>
+</select>
 <br><br>
-    <label for="num">Number of tickets</label>
-    <input type="number" min="1" id="num" name="num" ><br>
-    
+<label for="num">Number of tickets</label>
+<input type="number" min="1" id="num" name="num" ><br>
 <br>
 <label>I need Food token (costs an additional Rs.500 per Ticket) </label>
 <input type="number" min="0" id="food" value="foodToken">
 <br><br>
-
 <h3>Order</h3>
-
-</form>
 <p id="Output"></p>
 <p id="qtyofcurrentorder"></p>
-
-    <p>
-      
-        Cost per Ticket:
-        <span id="cost"></span>
+<p>Cost per Ticket:
+<span id="cost"></span>
 ,
-    </p>
-
-    Additional Cost due to duration:
-        <span id="time"></span>
-        
-
+</p>
+Additional Cost due to duration:
+<span id="time"></span>
 <br><br>
 <button id="generate">Generate Current order</button>
 <button id="addCart"> Add to Order</button>
@@ -77,29 +59,21 @@
 <p id="lolPop"></p><!--to show the number of loyalty points-->
 <p id=output></p>
 <h3>Overall Order</h3>
-
 Total Qty of tickets:<span id="qty"></span>
 <br>
-
 Cart items:
 <span id="count"></span>
 <span id="Quantity"></span>
-
 <p id="Overall"><p>
 <span id="error"></span>
-   
 </div>
 <div id="pop"> <!--pop up message-->
-    <P>Thank you for your purchase</P>
-   
+ <P>Thank you for your purchase</P>
 </div>
-
 <div id="error-pop"> <!--pop up message-->
-    <P>ERROR</P>
-   
+<P>ERROR</P>
 </div>
 </form>
-
-        <script src="primary.js"></script>
-    </body>
+<script src="primary.js"></script>
+</body>
 </html>
