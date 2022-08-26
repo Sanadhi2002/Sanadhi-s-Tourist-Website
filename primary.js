@@ -29,6 +29,7 @@ let txtToken=document.getElementById("food");
 let btnAddtoFav=document.getElementById("AddtoFav");
 let btnOrderFav=document.getElementById("OrderFav");
 let error=document.getElementById("error");
+
 /*
 durationChoices.addEventListener("change",findDuration);*/
 
@@ -42,8 +43,6 @@ ticketChoices.addEventListener("change",checkTicket);
 durationChoices.addEventListener("change",findDuration);
 
 
-
-
 function init(){
     document.getElementById("Output").innerText=" ";
    txtCost.innerText=0.00;
@@ -52,9 +51,8 @@ function init(){
     overallQuantity=0;
 }
 
-function checkTicket() {
+function checkTicket() {//checking the ticket type
 
- 
     if (ticketChoices.value== "Foreign Adult Pass") {
         ticketCost = 5000.00;
         ticket = "Foreign Adult Pass";
@@ -223,14 +221,13 @@ function OrderFav(event){
 }
 
 
-btnLoyaltyPoints=document.getElementById("loyaltyPoints");
 
 btnLoyaltyPoints.addEventListener("click",checkPoints);
 
 let elementTwo=document.getElementById("lolPop");
 
 function checkPoints(){
-  
+  //code for loyalty points
   let totQuantity=parseInt(Quantity.innerText);
    if(totQuantity> 3){
     loyaltyPoints = (totQuantity) *20;
@@ -248,7 +245,7 @@ localStorage.setItem('loyalty-points' ,JSON.stringify(0));
 
   };
 
-btnGenerate=document.getElementById("generate");
+btnGenerate=document.getElementById("generate");//code to generate the current order
 btnGenerate.addEventListener("click",display);
 function display(){
 
