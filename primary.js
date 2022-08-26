@@ -103,7 +103,7 @@ function checkTicket() {
             
              txtCost.innerText =  `${ticketCost.toFixed(2)}`; 
              
-             txtOutput.innerText="ticket : "+ ticket;
+             txtOutput.innerText="ticket : "+ ticket+"LKR";
   
            
             
@@ -134,7 +134,7 @@ function checkTicket() {
             
         
           
-            txtTime.innerText=durationCost+" is charged per ticket for "+ durationChoices.value;
+            txtTime.innerText=durationCost+"LKR  is charged per ticket for "+ durationChoices.value;
 
            // txtOutput.innerText+="\nduration cost:"+durationChoices.value+"\n qty:"+txtNumber.value;
              
@@ -150,15 +150,15 @@ function AddtoCart(){
     let AddtogettotQty=parseInt(document.getElementById("qtyofcurrentorder").innerText);
     total=(ticketCost+durationCost+foodCost)*(numofTickets);
     totalCost=+total;
-     txtOverall.innerText+=`Qty: ${numofTickets} \n tickets: ${ticket} \n Food Cost: ${foodCost}\n  ticket cost: ${ticketCost} \n Duration Cost: ${durationCost} \n total:   ${total.toFixed(2)} \n Overall Cost: ${totalCost.toFixed(2)} \n`;
+     txtOverall.innerText+=`Qty: ${numofTickets} \n tickets: ${ticket} \n Food Cost: ${foodCost}LKR\n  ticket cost: ${ticketCost}LKR \n Duration Cost: ${durationCost}LKR \n total:   ${total.toFixed(2)}LKR \n Overall Cost: ${totalCost.toFixed(2)}LKR \n`;
 
-            txtCost.innerText=" ";
+            txtCost.innerText=0;
             Count.innerText++;
             txtOutput.innerText="";
             ticketChoices.selectedIndex = 0;
             durationChoices.selectedIndex = 0;
             Quantity.innerText+=numofTickets;
-            txtTime.innerText="";
+            txtTime.innerText=0;
             txtNumber.value = '';
             txtToken.value='';
             document.getElementById("output").innerText ="";
@@ -263,6 +263,6 @@ function display(){
   total=(ticketCost+durationCost+foodCost)*(numofTickets);
   totalCost=+total;
 
-  document.getElementById("output").innerText =`Qty: ${numofTickets} \n tickets: ${ticket} \n Food Cost: ${foodCost}\n  ticket cost: ${ticketCost} \n Duration Cost: ${durationCost}  \n  total:   ${total.toFixed(2)} \n   `;
+  document.getElementById("output").innerText =`Qty: ${numofTickets} \n tickets: ${ticket} \n Food Cost: ${foodCost}LKR\n  ticket cost: ${ticketCost}LKR \n Duration Cost: ${durationCost}LKR  \n  total:   ${total.toFixed(2)}LKR \n   `;
 
 };
